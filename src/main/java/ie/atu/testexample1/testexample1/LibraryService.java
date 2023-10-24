@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public interface LibraryService {
+public class LibraryService {
     private List<Book> Library = new ArrayList<>();
 
     public List<Book> getBooks() {
