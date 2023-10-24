@@ -12,7 +12,7 @@ public class LibraryController {
     private LibraryService libraryService;
 
     @Autowired
-    public void setLibraryService(LibraryService, libraryService) {
+    public void setLibraryService(LibraryService libraryService) {
         this.libraryService = libraryService;
     }
 
