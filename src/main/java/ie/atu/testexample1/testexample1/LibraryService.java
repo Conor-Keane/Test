@@ -7,10 +7,22 @@ import java.util.List;
 
 @Service
 public class LibraryService {
-    private List<Book> Library = new ArrayList<>();
 
-    public List<Book> getBooks() {
-        return Library;
+    private final Library library;
+    List<Book> LibraryData = new ArrayList<>();
+
+    public LibraryService(Library library) {
+        this.library = library;
+    }
+
+    public List<Book> getLibraryData() {
+        return LibraryData;
+    }
+
+    public Book getBooks() {
+        Book td = library.getBooks();
+        LibraryData.add(td);
+        return td;
     }
 
 }
